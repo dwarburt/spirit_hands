@@ -102,13 +102,11 @@ module Hirb
     remove_method :height
     attr_reader :width, :height, :options
 
-    remove_method :initialize
     def initialize(width, height, options={})
       resize(width, height)
       @options = options
     end
 
-    remove_method :pager_command
     def pager_command
       options[:pager_command] || self.class.pager_command
     end
