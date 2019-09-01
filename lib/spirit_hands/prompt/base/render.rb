@@ -79,8 +79,11 @@ module SpiritHands
         # <app/>: state.app (Object) converted to String
         'app' => ->(state) {
           app = state.app
-          if app.class.respond_to?(:parent_name) && \
-             app.class.parent_name.respond_to?(:underscore)
+          if app.class.respond_to?(:module_parent_name) && \
+            app.class.module_parent_name.respond_to?(:underscore)
+            app.class.module_parent_name.underscore
+          elsif app.class.respond_to?(:parent_name) && \
+            app.class.parent_name.respond_to?(:underscore)
             app.class.parent_name.underscore
           elsif app
             app.to_s
