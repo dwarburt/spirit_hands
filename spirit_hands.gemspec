@@ -23,7 +23,7 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version = '>= 2.0'
   gem.add_runtime_dependency 'pry', '~> 0.10'
   gem.add_runtime_dependency 'pry-rails', '~> 0.3'
-  gem.add_runtime_dependency 'pry-doc', '~> 0.8'
+  gem.add_runtime_dependency 'pry-doc', '>= 0.8', '< 2'
   if RUBY_PLATFORM == 'java'
     gem.platform = 'java'
     gem.add_runtime_dependency 'pry-nav', '~> 0.2.4'
