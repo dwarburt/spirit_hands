@@ -55,8 +55,8 @@ module SpiritHands
     (Terminal.unicode?) ? "\u{BB}" : '>'
   }
 
-  # Enable or disable AwesomePrint (default: true)
-  mattr_accessor_with_default :awesome_print, true
+  # Enable or disable AmazingPrint (default: true)
+  mattr_accessor_with_default :amazing_print, true
 
   def self.app_name
     if app.class.respond_to?(:parent_name) && \
@@ -83,7 +83,7 @@ module SpiritHands
   CONFIG_KEYS = [
     :app,
     :app_name,
-    :awesome_print,
+    :amazing_print,
     :color,
     :colored_prompt,
     :coolline,

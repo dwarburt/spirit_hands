@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.license       = 'MIT'
   gem.homepage      = 'https://github.com/steakknife/spirit_hands'
   gem.summary       = 'Exercise those fingers. Pry-based enhancements for the default Rails console.'
-  gem.description   = "Spending hours in the rails console? Spruce it up and show off those hard-working hands! spirit_hands replaces IRB with Pry, improves output through awesome_print, and has some other goodies up its sleeves."
+  gem.description   = "Spending hours in the rails console? Spruce it up and show off those hard-working hands! spirit_hands replaces IRB with Pry, improves output through amazing_print, and has some other goodies up its sleeves."
 
   gem.executables   = `git ls-files -z -- bin/*`.split("\0")
     .select { |f| File.executable?(f) }
@@ -34,6 +34,6 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'hirb', '~> 0.7'
   gem.add_runtime_dependency 'hirb-unicode-steakknife', '~> 0.0'
   gem.add_runtime_dependency 'pry-coolline', '~> 0.2'
-  gem.add_runtime_dependency 'awesome_print', '~> 1.6'
+  gem.add_runtime_dependency 'amazing_print', '~> 1.2'
 end
 .tap {|gem| pk = File.expand_path(File.join('~/.keys', 'gem-private_key.pem')); gem.signing_key = pk if File.exist? pk; gem.cert_chain = ['gem-public_cert.pem']} # pressed firmly by waxseal

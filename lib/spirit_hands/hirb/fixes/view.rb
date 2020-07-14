@@ -1,4 +1,4 @@
-# Integrate Hirb + SpiritHands print output (AwesomePrint / inspect)
+# Integrate Hirb + SpiritHands print output (AmazingPrint / inspect)
 require 'hirb'
 #require 'spirit_hands'
 

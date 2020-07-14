@@ -8,7 +8,7 @@ hard-working hands!
 **spirit_hands** is an opinionated set of console-related gems and a bit of glue:
 
 * [**Pry**][pry] for a powerful shell alternative to IRB.
-* [**Awesome Print**][awesome_print] for stylish pretty print.
+* [**Amazing Print**][amazing_print] for stylish pretty print.
 * [**Hirb**][hirb] for tabular collection output.
 * [**Hirb Unicode**][hirb-unicode-steakknife] for aligned Unicode output.
 * [**Pry Rails**][pry-rails] for additional commands (`show-routes`,
@@ -57,14 +57,14 @@ begin
   SpiritHands.hirb = false
 rescue LoadError => e
   raise unless e.message =~ /.*such file.*spirit_hands/
-  puts 'no SpiritHands'  
+  puts 'no SpiritHands'
 end
 ```
 
-### `awesome_print`
+### `amazing_print`
 
-[**AwesomePrint**][awesome_print] is enabled by default.
-`SpiritHands.awesome_print = false` to disable.
+[**AmazingPrint**][amazing_print] is enabled by default.
+`SpiritHands.amazing_print = false` to disable.
 
 ### `color`
 
@@ -92,7 +92,7 @@ Control whether pry-coolline is activated.
 
 ### `hirb_unicode`
 [**Hirb-unicode**][hirb-unicode-steakknife] is enabled by default when hirb is enabled.
-`SpiritHands.hirb_unicode = false` to disable.  
+`SpiritHands.hirb_unicode = false` to disable.
 No effect when hirb is disabled.
 
 
@@ -130,7 +130,7 @@ mixed encodings.
 
 
 [pry]:                      http://pry.github.com
-[awesome_print]:            https://github.com/michaeldv/awesome_print
+[amazing_print]:            https://github.com/amazing-print/amazing_print
 [hirb]:                     https://github.com/cldwalker/hirb
 [hirb-unicode-steakknife]:  https://github.com/steakknife/hirb-unicode
 [pry-rails]:                https://github.com/rweng/pry-rails

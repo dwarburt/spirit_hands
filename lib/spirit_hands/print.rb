@@ -1,4 +1,4 @@
-require 'awesome_print'
+require 'amazing_print'
 
 module SpiritHands
   module Print
@@ -12,7 +12,7 @@ module SpiritHands
       end
 
       def pretty(value)
-        if ::SpiritHands.awesome_print
+        if ::SpiritHands.amazing_print
           opts = { :indent => ::SpiritHands.value_indent }
           opts[:plain] = true if !SpiritHands.color
           value.ai(opts)

@@ -17,7 +17,7 @@ class << SpiritHands
     setup_byebug
     setup_doc
 
-    # Use awesome_print for output, but keep pry's pager. If Hirb is
+    # Use amazing_print for output, but keep pry's pager. If Hirb is
     # enabled, try printing with it first.
     ::SpiritHands::Print.install!
 
