@@ -5,7 +5,11 @@ module SpiritHands
   module Prompt
     class << self
       def install!
-        ::Pry.config.prompt = [ main, multiline ].freeze
+        ::Pry.config.prompt = Pry::Prompt.new(
+          :spirit_hands,
+          "The SpritHands prompt",
+          [ main, multiline ]
+        )
       end
     end # self
   end # Prompt
