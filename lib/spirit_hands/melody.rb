@@ -12,7 +12,6 @@ class << SpiritHands
     setup_less_show_raw_unicode
     setup_hirb
     disable_remote
-    setup_coolline # setup Pry.config.input
     setup_nav
     setup_byebug
     setup_doc

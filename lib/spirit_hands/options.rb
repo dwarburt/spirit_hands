@@ -1,7 +1,6 @@
 # encoding: UTF-8
 require 'readline'
 require 'spirit_hands/mattr_accessor_with_default'
-require 'spirit_hands/options/coolline'
 require 'spirit_hands/options/color'
 require 'spirit_hands/options/less'
 require 'spirit_hands/options/hirb'
@@ -86,7 +85,6 @@ module SpiritHands
     :amazing_print,
     :color,
     :colored_prompt,
-    :coolline,
     :hirb,
     :hirb_unicode,
     :less_colorize,
