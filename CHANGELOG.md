@@ -1,3 +1,6 @@
+## 3.1.0 (2026-09-24)
+* Support Ruby 3.4 and Pry 0.16 by dropping the removed Pry plugin manager API
+
 ## 3.0.0 (2020-07-14)
 * Forked
 
